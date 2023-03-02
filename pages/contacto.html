@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina web</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="main">
+    <header class="main__menu">
+       <!--  Aqui ira el logo -->
+        <figure class="menu__logo">
+            <a href="../index.html">Logo</a> 
+        </figure>
+        <nav class="menu__items">
+            <li class="menu__item">
+                <a href="../index.html">Home</a> 
+            </li>
+            <li class="menu__item">
+                <a class="item__menu--footer" href="/pages/insumos.html">Insumos</a> 
+            </li>
+            <li class="menu__item">
+                <a href="/pages/cursos.html">Cursos</a> 
+            </li>
+            <li class="menu__item"><a href="/pages/blog.html">Blog</a></li>
+            <li class="menu__item"><a href="/pages/contacto.html">Contacto</a></li>
+        </nav>
+    </header>
+    <section class="main__content">
+        <div class="container__form"> 
+            <h3 class="title__secondary">Contáctanos</h3>
+     
+            <form class="form__contact">
+                <div class="container__inputs"> 
+                    <div class="input__contact"> 
+                        <label for="fname">Nombre</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Nombre">
+                    </div>
+        
+                    <div class="input__contact"> 
+                        <label for="lname">Apellido</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Apellido">
+                    </div>
+                </div>
+    
+                <div class="container__inputs"> 
+                    <div class="input__contact"> 
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                    </div>
+        
+                    <div class="input__contact"> 
+                        <label for="phone">Telefono</label>
+                        <input type="text" id="phone" name="phone" placeholder="Telefono">
+                    </div>
+                </div>
+    
+                <div class="input__contact--full"> 
+                    <label for="msg">Mensaje</label>
+                    <textarea placeholder="Escribenos y cuentanos en que podemos ayudarte..." name="msg" id="msg"></textarea>
+                </div> 
+            
+                <input class="btn__primary" type="submit" value="Enviar">
+            </form>
+        </div>
+ 
+    </section>
+    <footer class="footer">
+        <div class="footer__items">
+            <figure class="menu__logo">
+                Logo
+            </figure>
+            <div class="pages"> 
+                <nav class="menu__items--footer"> 
+                    <li class="menu__item--footer">
+                        <a class="item__menu--footer" href="../index.html">Home</a>
+                    </li>
+                    <li class="menu__item--footer">
+                        <a class="item__menu--footer" href="/pages/insumos.html">Insumos</a>
+                    </li>
+                    <li class="menu__item--footer">
+                        <a class="item__menu--footer" href="/pages/cursos.html">Cursos</a>
+                    </li>
+                    <li class="menu__item--footer">
+                        <a class="item__menu--footer" href="/pages/blog.html">Blog</a>
+                    </li>
+                    <li class="menu__item--footer">
+                        <a class="item__menu--footer" href="/pages/contacto.html">Contacto</a>
+                    </li> 
+                </nav>
+            </div> 
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__copyright">
+            <p> © 2023 Crusiris nuñez </p>
+            <a href="index.html">Términos y condiciones</a>
+            <div class="footer__rrss"> 
+                <a href="http://" target="_blank" rel="noopener noreferrer"> <img class="rs" src="/img/facebbok.png" alt="facebook"></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img class="rs" src="/img/instagram.png" alt="instagram"></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img class="rs" src="/img/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
