@@ -160,9 +160,9 @@
 .footer{
     grid-column: 2 / 12; 
     background-color: #93cfc6;
-    padding: 1rem; 
-}
-
+    padding: 1rem;  
+    margin-top: 3.75rem;
+} 
 
 .footer__items{
     display: flex;
@@ -208,6 +208,85 @@
 .footer__rrss .rs{
     width: 2.5rem;
     height: 2.5rem;
+}
+
+/* contacto */
+.container__form{
+    grid-column: 2 / 12; 
+    display: grid;
+    grid-template-columns: 12;
+    margin-top: 5rem;  
+}
+
+.title__secondary{
+    grid-column: 2 / 12; 
+}
+
+.form__contact{
+    grid-column: 2 / 11; 
+    height: 45vh;
+    margin-top: 3.75rem; 
+}
+
+.container__inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 700px; 
+}
+
+.input__contact{
+    display: flex;
+    flex-direction: column;
+    width: 48%; 
+   
+}
+
+.input__contact input{  
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  height: 2.5rem; 
+  padding: 0 0.5rem;
+  border-radius: 3px;
+  border: 1.5px solid lightgrey;
+  outline: none; 
+}
+
+.input__contact--full{
+    display: flex;
+    flex-direction: column;
+}
+
+.input__contact--full textarea{
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    height: 2.5rem; 
+    padding:  1rem;
+    border-radius: 3px;
+    border: 1.5px solid lightgrey;
+    outline: none; 
+    min-width: 670px; 
+}
+
+.btn__primary{
+    background-color: transparent;
+    border: 0.125em solid #93cfc6af;
+    border-radius: 0.5rem; 
+    color: #93cfc6af;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0.5rem 2.3em;
+    text-align: center;  
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.btn__primary:hover{
+    background-color: #93cfc6af;
+    color: #ffff;
+    transition-duration: 1s;
 }
 
 @media only screen and (max-width: 768px) {
