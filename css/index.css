@@ -318,6 +318,11 @@
         width: 300px;
     }
 
+    .footer__copyright{
+        display: flex;
+        flex-direction: column; 
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -400,6 +405,11 @@
     .input__contact input{  
         width: 500px;
     }
+
+    .footer__copyright{
+        display: flex;
+        flex-direction: column; 
+    }
 } 
 
 @media only screen and (min-width: 1024px) {
@@ -451,6 +461,13 @@
 
     .input__contact input{  
         width: 500px;
+    }
+
+    .footer__copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 } 
 
