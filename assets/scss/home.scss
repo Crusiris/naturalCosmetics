@@ -1,0 +1,242 @@
+@import "./media-queries.scss";
+
+.main{
+
+    .carousel__img{
+        width: 100%;
+        height: 500px; 
+        object-fit: cover;
+
+        @include tablet {
+            width: 100%;
+            height: 280px; 
+            object-fit: cover; 
+        }
+
+        @include mobile {
+            width: 100%;
+            height: 350px; 
+            object-fit: cover;
+        }
+    } 
+
+    .main__content_home{
+        display: grid; 
+        grid-template-columns: repeat(12, 1fr); 
+        grid-template-rows:   minmax(auto, max-content);
+        grid-auto-rows: minmax(10px, auto); 
+
+        .characteristics{
+            grid-column: 2 / 12;  
+            margin-top: 80px; 
+
+            .section__content{
+                padding: 2rem 1rem;  
+
+                .title__secondary{
+                    text-align: center;
+                }
+
+                .characteristics__texto{
+                    text-align: center;
+                 }
+            } 
+
+            .characteristics__items{
+                grid-column: 2 / 12;
+                display: flex;
+                justify-content: space-between;
+
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                  
+                .characteristics__item{ 
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column; 
+                    width: 20%;
+                    padding: 1rem; 
+
+                    @include tablet {
+                       width: 60%;
+                    }
+                }
+
+                .characteristics__item h4{
+                    text-align: center; 
+                    font-size:  1.2rem;
+                }
+            }
+    
+            .characteristics__image{
+                width: 11.375rem;
+                height: 11.375rem;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .products{
+            grid-column: 2 / 12;   
+            margin-top: 80px;
+            .section__content{
+                padding: 2rem 1rem;  
+
+                .title__secondary{
+                    text-align: center;
+                }
+
+                .characteristics__texto{
+                    text-align: center;
+                 }
+            } 
+  
+            .products__mob{
+                display:none; 
+                @include tablet {
+                    display: block; 
+                }
+
+                .card__description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center; 
+                    padding: 1em 0.5em; 
+                    text-decoration: none;
+                }
+
+                .card__description > h3 {
+                    margin-bottom: 0.5em;
+                }
+            }
+            
+            .products__cards{
+                grid-column: 2 / 12;   
+                display: flex;
+                justify-content: space-between; 
+                @include tablet {
+                    display: none; 
+                }
+
+                
+                .product__card{ 
+                    width: 24%;   
+                    margin: 0 auto; 
+                    box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+                    border-radius: 4px;
+                    overflow: hidden;
+
+                    &:hover  {
+                        transform: translateY(-0.5rem) scale(1.0125);
+                        box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+                    }
+                    @include tablet {
+                        width: 80%;  
+                    }
+
+                    .card__image{
+                        display: block;
+                        width: 100%;
+                        height: 20.188rem;
+                        object-fit: cover;
+                    }
+
+                    .card__description {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center; 
+                        padding: 1em 0.5em; 
+                        text-decoration: none;
+                    }
+
+                    .card__description > h3 {
+                        margin-bottom: 0.5em;
+                    }
+
+                }  
+            }
+        }
+ 
+        .testimonys{
+            grid-column: 2 / 12;   
+            margin-top: 80px;
+
+            .section__content{
+                padding: 2rem 1rem;  
+
+                .title__secondary{
+                    text-align: center;
+                }
+
+                .characteristics__texto{
+                    text-align: center;
+                 }
+            } 
+
+            .testimony__items{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            
+            .testimony {
+                font-family: 'Raleway', Arial, sans-serif;
+                position: relative;
+                overflow: hidden;
+                margin: 10px;
+                min-width: 19.375rem;
+                max-width: 19.375rem;
+                width: 100%;
+                color: #333;
+                text-align: left;
+                box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5); 
+            }  
+             
+            .testimony blockquote {
+                display: block;
+                border-radius: 8px;
+                position: relative;
+                background-color: #fafafa;
+                padding: 25px 50px 30px 50px;
+                font-size: 0.8em;
+                font-weight: 500;
+                margin: 0;
+                line-height: 1.6em;
+                font-style: italic;
+            }
+            
+            .testimony blockquote:before,
+            .testimony blockquote:after {
+                font-family: 'FontAwesome';
+                content: "\201C";
+                position: absolute;
+                font-size: 50px;
+                opacity: 0.3;
+                font-style: normal;
+            }
+            
+            .testimony blockquote:before {
+                top: 25px;
+                left: 20px;
+            }
+            
+            .testimony blockquote:after {
+                content: "\201D";
+                right: 20px;
+                bottom: 0;
+            }  
+        }
+
+    }
+
+    
+}

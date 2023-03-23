@@ -1,0 +1,20 @@
+{
+  "name": "naturalcosmetics",
+  "version": "1.0.0",
+  "description": "Sitio web implementado con html, css y bootstrap (segunda entrega de coderhouse)",
+  "main": "index.js",
+  "scripts": { 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crusiris/naturalCosmetics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crusiris/naturalCosmetics/issues"
+  },
+  "homepage": "https://github.com/Crusiris/naturalCosmetics#readme"
+}
