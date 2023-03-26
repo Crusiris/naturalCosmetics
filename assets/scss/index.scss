@@ -1,12 +1,11 @@
-@import "./home.scss";
-@import "./footer.scss";
-@import "./insumos.scss";
-@import "./cursos.scss";
-@import "../partials/card.scss";
-@import "../partials/footer.scss";
-@import "./blog.scss";
-@import "./article.scss";
-@import "./contacto.scss";
+@import "./home";
+@import "./article";
+@import "./blog";
+@import "./contacto";
+@import "./cursos";
+@import "./insumos";
+@import "../partials/card";
+@import "../partials/footer";
 
 // estilos generales
 .main{ 
