@@ -1,0 +1,75 @@
+@import "./media-queries.scss";
+
+.main{
+    .main__content{
+        display: grid; 
+        grid-template-columns: repeat(12, 1fr);  
+        justify-self: center; 
+
+        .container__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            grid-column: 3 / span 8;  
+            .form__contact{
+                display: flex; 
+                flex-direction: column; 
+
+                .input__contact , .input__contact--full{
+                    display: flex;
+                    flex-direction: column; 
+                } 
+
+                .input__contact input{ 
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    height: 2.5rem; 
+                    padding: 0 0.5rem;
+                    border-radius: 3px;
+                    border: 1.5px solid lightgrey;
+                    outline: none;  
+                    width: 600px;
+
+                    @include tablet{
+                        width: 300px;
+                    }
+                }
+                
+                .btn__primary{
+                    background-color: transparent;
+                    border: 0.125em solid #93cfc6af;
+                    border-radius: 0.5rem; 
+                    color: #93cfc6af;
+                    cursor: pointer;
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 0.5rem 2.3em;
+                    text-align: center; 
+                }
+                
+                .btn__primary:hover{
+                    background-color: #93cfc6af;
+                    color: #ffff;
+                    transition-duration: 1s;
+                }
+                
+                .input__contact--full textarea{
+                    margin-top: 0.5rem;
+                    margin-bottom: 1.5rem;
+                    height: 2.5rem; 
+                    padding:  1rem;
+                    border-radius: 3px;
+                    border: 1.5px solid lightgrey;
+                    outline: none;  
+                }
+                
+            
+            } 
+            
+
+        }
+    }
+}
+
+ 
