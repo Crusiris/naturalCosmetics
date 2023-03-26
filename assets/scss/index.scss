@@ -2,7 +2,8 @@
 @import "./footer.scss";
 @import "./insumos.scss";
 @import "./cursos.scss";
-@import "./card.scss";
+@import "../partials/card.scss";
+@import "../partials/footer.scss";
 @import "./blog.scss";
 @import "./article.scss";
 @import "./contacto.scss";
@@ -11,5 +12,5 @@
 .main{ 
     max-width: 1280px;
     margin: 0 auto;
-    color: #515151;
+    color: #515151; 
 }
