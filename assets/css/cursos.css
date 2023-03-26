@@ -1,0 +1,11 @@
+.main .main__content_cursos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(auto, max-content);
+  grid-auto-rows: minmax(10px, auto); }
+  .main .main__content_cursos .banner {
+    grid-column: 2 / 12; }
+    .main .main__content_cursos .banner .banner__img {
+      width: 100%; }
+  .main .main__content_cursos .products {
+    grid-column: 2 / 12; }

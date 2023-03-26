@@ -1,0 +1,76 @@
+.main .main__content--blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(auto, max-content);
+  grid-auto-rows: minmax(10px, auto);
+  gap: 1rem;
+  margin-top: 2rem; }
+  @media screen and (max-width: 1024px) {
+    .main .main__content--blog {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 768px) {
+    .main .main__content--blog {
+      grid-template-columns: repeat(1, 1fr); } }
+  .main .main__content--blog .article__item {
+    grid-column: span 1;
+    justify-self: center;
+    display: block;
+    position: relative;
+    width: 22em;
+    height: 30em;
+    font-family: Roboto, veranda;
+    background: url("../img/imgCardBlog.png") no-repeat;
+    background-size: 22em 30em;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 0.7em; }
+    .main .main__content--blog .article__item * {
+      position: relative;
+      z-index: 2; }
+    .main .main__content--blog .article__item:hover .color-overlay {
+      background-color: #93cfc6af; }
+    .main .main__content--blog .article__item:hover .info {
+      bottom: -3em;
+      opacity: 1; }
+    .main .main__content--blog .article__item .title-box {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin-top: 2em; }
+      .main .main__content--blog .article__item .title-box h3 {
+        display: inline-block;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 1.4em;
+        text-align: center; }
+    .main .main__content--blog .article__item .intro {
+      width: 170px;
+      margin: 0 auto;
+      color: #fff;
+      font-family: 'Droid Serif', serif;
+      font-size: 0.8rem;
+      font-style: italic;
+      line-height: 18px;
+      margin-top: 0.8rem; }
+    .main .main__content--blog .article__item .info {
+      font-family: 'Droid Serif', serif;
+      font-size: 1rem;
+      color: #ddd;
+      padding: 0 2rem;
+      position: relative;
+      bottom: -4rem;
+      opacity: 0;
+      background: transparent;
+      transition: opacity 0.3s, bottom 0.3s;
+      text-align: center; }
+    .main .main__content--blog .article__item .color-overlay {
+      border-radius: 0.7em;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      transition: 0.7s background;
+      background: rgba(74, 100, 114, 0.3);
+      z-index: 1; }

@@ -1,14 +1,21 @@
 @import "./media-queries.scss";
 
-.main{ 
-    .main__content--supplies{
+.main{
+    .main__content_cursos{
         display: grid; 
         grid-template-columns: repeat(12, 1fr); 
         grid-template-rows:   minmax(auto, max-content);
         grid-auto-rows: minmax(10px, auto); 
 
-        .products{ 
+        .banner{
             grid-column: 2 / 12;   
+            .banner__img{
+                width: 100%;
+            }
+        }
+
+        .products{
+            grid-column: 2 / 12;    
         }
     }
 }
